@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" name="viewport" 
+	content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"/>
+ 	<title>서적 평론 싸이트</title>
+	<link href="style_review1.css" type="text/css" rel="stylesheet">
+	<script src = "script_review.js"></script>
+</head>
+<body>
+	<!--로고와 이동하는 네이게이터-->
+	<header>
+    	<div class = "logo">
+			<a href="../homepage.html" class = "gohome">
+				<img src="../mainimg/logo.png" id = "logoi">
+				<h3 id = "logot">이야기 세상</h3>
+			</a>
+		</div>
+			<nav>
+				<ul class="Menu">
+				<a href="../author.html" class = "link"><li class="list">작가</li></a>
+				<a href="../ratings_month.html" class = "link"><li class = "list">랭킹</li></a>
+				<a href="review1.html" class = "link"><li class = "list">평점</li></a>
+				<a href="../community.html" class = "link"><li class = "list">커뮤니티</li></a>
+				</ul>
+			</nav>
+	</header>
+
+	<div class="all">
+		<h1>평점 및 리뷰</h1>
+	</a><p id="int">아래의 책에 별점과 리뷰를 남겨주세요!</p>
+	<select onchange="replace(this);" class = "sel">
+		<option>책 제목을 선택해주세요</option>
+		<option value = "../review_month.html">-월간/일간 순위보며 리뷰 남기기</option>
+		<option value="review1.html">1.친절한 이방인</option>
+		<option value="review2.html">2. 2022 제5회 한국과학문학상 수상작품집</option>
+		<option value="review3.html">3. 디 에센셜 한강</option>
+		<option value="review4.html">4.저만치 혼자서</option>
+		<option value="review5.html">5.신기한 맛 도깨비 식당1</option>
+		<option value="review6.html">6. 아노말리</option>
+		<option value="review7.html">7. 룬의 아이들 블러디드 5</option>
+		<option value="review8.html">8. 하늘을 나는 타이어</option>
+		<option value="review9.html">9. 붉은 봄</option>
+		<option value="review10.html">10. 레슨 인 케미스트리 1</option>
+	</select>
+	<hr>    
+  	<article><!--메인-->
+            <div class = rate>
+				<h2 id = "reviewtitle">9. 붉은 봄</h2>
+				<img src="../booktoday/9.jpg" id="reviewbookimg">
+				<div class="int">
+					<p class = "auth"><strong>작가</strong> : 원주희</p>
+					<p class = "year"><strong>출판사</strong> : 마카롱</p>
+					<p class = "buy "><strong>구매처</strong> : <a href = https://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkClass=010111&barcode=9791159097720>링크</a></p>
+				</div>
+            </div>  
+  	</article>   
+	</section>
+	<section>
+		<div id = score><!--랭킹으로 불러왔을 시 설문지-->
+			<div id = point>
+					
+			
+			<form class="survey">
+				<fieldset class="field1">
+				  <legend><span class="new_color">평점</span> 및 <span class="new_color">리뷰</span>를<br> 남겨주세요*</legend>
+			<input type = "radio" name = "rateS" value = "5"> 5점 
+			<input type = "radio" name = "rateS" value = "4"> 4점
+			<input type = "radio" name = "rateS" value = "3"> 3점
+			<input type = "radio" name = "rateS" value = "2"> 2점
+			<input type = "radio" name = "rateS" value = "1"> 1점<br><br>
+			<textarea id = reviewtext rows="10" cols="50" placeholder="유저님의 소중한 리뷰가 이 책의 예비 구매자들에게 큰 힘이 됩니다." ></textarea>
+			<div class = button>
+			<input type="button" value="제출" onclick="alertsubmit()">
+			</div>
+			</fieldset>
+		</form>
+		</div>		
+	</section>
+</div>
+	<section>
+		<div class = "first">
+			<p id="write">책 속에는 과거의 모든<br>영혼이 가로누워 있다.<span>_칼라일</span></p>
+			<br><br><br>
+		  </div>
+		</section>
+<section> 
+
+	<footer>
+		<hr id = "lastline">
+		<p class = "footertext">© TEAM H<br>
+		made 2022.06</p>
+	</footer>
+</body>

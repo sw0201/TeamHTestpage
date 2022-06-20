@@ -1,0 +1,289 @@
+﻿/**로고글씨체**/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+
+/*전체 설정**/
+
+html {
+    font-size: calc(1vmax);
+}
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+/**header부분**/
+
+header { background-color: hsla(44, 59%, 66%, 0.74);
+    padding: 0%;
+    text-align : right;
+    height: 9%;
+    width : 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#logot {
+font-family: 'Black Han Sans', sans-serif;
+color : white;
+font-size: 2.4rem;
+font-weight: 10;
+text-align: left;
+position: absolute;
+left : 8.8%;
+top : 19%
+}
+
+#logoi {
+    width: 2.8%;
+    height: 2.8%;
+    position: relative;
+    left : -92%;
+    margin-top: 0.79%;
+}
+
+
+nav { 
+display: inline-block; 
+position: absolute;
+top : 38%;
+right : 3%
+} 
+
+.Menu {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size:  1.7rem;
+    border : 0.0625em;
+    list-style: none;
+    display: inline-block;
+}
+
+
+ .list {
+    display: inline-block;
+    padding-left: 0.3em;
+}
+
+.list:hover {
+        text-decoration: underline;
+}
+
+
+
+.link {
+    color : white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(113, 70, 0);
+}
+
+.gohome {
+    text-decoration : none;
+}
+
+
+/**여기서 부터 본문**/
+body{height:100%;}
+
+.all {
+    padding-top: 7%;
+}
+
+.button1{
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Black Han Sans', sans-serif;
+    background-color: hsla(44, 59%, 66%, 0.74);
+    animation-duration: 3s;
+    animation-name: click;
+    animation-iteration-count : infinite;
+    padding-left : 3%;
+    padding-right : 3%;
+    border: none;
+    border-radius: 10em;
+}
+
+.button2{
+    font-size: 2.5rem;
+    color: rgb(113, 70, 0);
+    font-family: 'Black Han Sans', sans-serif;
+    background-color:hsla(44, 59%, 66%, 0.74);
+    border-radius: 0.3em;
+    animation-duration: 3s;
+    animation-name: click;
+    animation-iteration-count : infinite;
+    padding-left : 3%;
+    padding-right : 3%;
+    border: none;
+    border-radius: 10em;
+}
+
+.buttons{
+    position: fixed;
+    top: 13%;
+    /* width: 100% */
+    left: 84%;
+    right: 0%;
+}
+
+@keyframes click {
+    10% {
+        transform: translateY-(0.2em); 
+    }
+    20%{
+        transform: (0.2em);
+    }
+    30% {
+        transform: translateY(-0.2em);
+    }
+    40% {
+        transform: translateY(0.2em);
+    }
+    50% {
+        transform: translateY(-0.2em);
+    }
+    60% {
+        transform: translateY(0.2em);
+    }
+    70% {
+        transform: translateY(-0.2em);
+    }
+    80%{
+        transform: translateY(0.2em);
+    }
+    90% {
+        transform: translateY(-0.2em);
+    }
+    100% {
+        transform: translateY(0.2em);
+    }
+}
+  
+input:hover {
+    cursor: pointer;
+    background-color: rgb(113, 70, 0);
+    transition: 0.3s ease-in-out;
+    animation-play-state: paused;
+    color : white;
+}
+
+
+.topic {
+    font-size: 3.13rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: center;
+}
+
+.date {
+    font-size: 1rem;
+    color: rgb(107, 107, 107);
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: center;
+}
+
+#line {
+    width : 10%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+/**제목부분 끝**/
+
+.right{
+    display: flex;
+ }
+ 
+ section{
+     width:69%;
+     margin: 0 auto;
+ }
+ 
+ section article{
+     display: inline-block;
+     padding-left:2%;
+     padding-top: 2%;
+     padding-right: 3%;
+     margin:1.5% 1.5%;
+ 
+     width : 45%;
+     padding-bottom: 2.4%;
+ 
+     border-radius : 3%;
+     background-color: rgb(255, 255, 255);
+     border: 0.1em solid black;
+ }
+ 
+ .booki {
+     width : 10em;
+     height : 13em;
+     position: relative;
+     bottom: -1em;
+ }
+ 
+ section .status{
+ padding-left:0.9em;	
+ }
+ 
+ section article a{
+     color : rgb(162, 34, 34);
+     text-decoration: underline;
+ }
+ 
+ section article h3{
+     font-size : 1.9rem;
+     font-family: 'Black Han Sans', sans-serif;
+     margin-top: 0.8rem;
+     background-color :hsla(44, 59%, 66%, 0.74);
+     border-radius: 35%;
+ }
+ 
+ .int_line{
+     width : 97%;
+     margin: auto;
+     margin-top: 0.5em;
+     margin-bottom: 0.6em;
+ }
+ 
+ section .say{
+     font-size:0.8rem;	
+ }
+ 
+ .review {
+    font-size: 2rem;
+    font-size : 1.9rem;
+    font-family: 'Black Han Sans', sans-serif;
+    color :rgb(113, 70, 0)
+}
+
+/**footer부분**/
+
+#lastline {
+    border: 1px bold #c8c4c4;
+    width: 95%;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top: 2%;
+}
+
+
+.footertext {
+    color : gray; 
+    padding-top: 1.5%;
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+footer {
+    width: 100%;
+    height: 5px;
+}

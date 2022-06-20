@@ -1,0 +1,258 @@
+/**로고글씨체**/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+/*전체 설정**/
+
+html {
+    font-size: calc(1vmax);
+}
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+/**header부분**/
+
+header { background-color: hsla(44, 59%, 66%, 0.74);
+    padding: 0%;
+    text-align : right;
+    height: 9%;
+    width : 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#logot {
+font-family: 'Black Han Sans', sans-serif;
+color : white;
+font-size: 2.4rem;
+font-weight: 10;
+text-align: left;
+position: absolute;
+left : 8.8%;
+top : 19%
+}
+
+#logoi {
+width: 2.8%;
+height: 2.8%;
+position: relative;
+left : -92%;
+margin-top: 0.79%;
+}
+
+
+nav { 
+display: inline-block; 
+position: absolute;
+top : 38%;
+right : 3%
+} 
+
+.Menu {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size:  1.7rem;
+    border : 0.0625em;
+    list-style: none;
+    display: inline-block;
+}
+
+
+ .list {
+    display: inline-block;
+    padding-left: 0.3em;
+}
+
+.list:hover {
+        text-decoration: underline;
+}
+
+
+
+.link {
+    color : white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(113, 70, 0);
+}
+
+.gohome {
+    text-decoration : none;
+}
+
+
+/**여기서 부터 본문**/
+
+section {
+    padding-top : 11%;
+    margin: auto;
+}
+   
+/**반짝이판**/
+
+
+#write {
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size : 4em;
+    z-index: 3;
+    color : rgb(62, 46, 6);
+}
+
+#write > span {
+    color: rgb(67, 67, 67);
+    font-size: 1.50rem;
+}
+
+
+#book {
+    width : 4.5%;
+    height: 4.5%;
+    margin-left: 70%;
+}
+
+#middleline {
+    width : 30%;
+    margin: auto;
+}
+
+/**동그라미들**/
+.click {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+div[class ^= circle] {
+    width: 24%;
+    padding-bottom: 24%;
+    border-radius: 50%;
+    float : left;
+    margin: 4.2%;
+    z-index: 0;
+}
+
+img[id ^= "read"] {
+    width : 30%;
+    height: 30%;
+    position: absolute;    
+}
+
+.circle_C1 {
+    background-color: antiquewhite;
+    position: relative;
+}
+
+#read1 {
+    right : 33%;
+    top : -15%;
+}
+
+.circle_C2 {
+    background-color: rgb(252, 247, 193);
+    position: relative;
+}
+
+#read2 {
+    right : 33%;
+    top : -15%;
+}
+
+.circle_C3 {
+    background-color:  rgb(255, 190, 134);
+    position: relative;
+}
+
+#read3 {
+    right : 33%;
+    top : -15%;
+}
+
+/**원안에 글자들**/
+
+h2[class$="t"] {
+ font-size: 3em; 
+ text-align: center;
+ color: black;
+ font-family: 'Black Han Sans', sans-serif;
+ z-index: 100;
+} 
+
+.authort {
+    position : absolute;
+    left : 11.1%;
+    bottom :30%;
+}
+
+.rankt {
+    position : absolute;
+    left : 11.1%;
+    bottom :30%;
+}
+
+.ratet{
+    position : absolute;
+    left : 11.1%;
+    bottom :30%;
+}
+
+/**원 애니메이션**/
+
+@keyframes up_down {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.circle_C1:hover  {
+    animation-duration: 2s;
+    animation-name: up_down;
+    animation-iteration-count : infinite;
+}
+  
+
+.circle_C2:hover {
+    animation-duration: 2s;
+    animation-name: up_down;
+    animation-iteration-count : infinite;
+}
+  
+.circle_C3:hover , .ratet:hover~.circle_C3 {
+    animation-duration: 2s;
+    animation-name: up_down;
+    animation-iteration-count : infinite;
+}
+
+/**footer부분**/
+
+#lastline {
+    border: 1px bold #c8c4c4;
+    width: 95%;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+
+.footertext {
+    color : gray; 
+    padding-top: 1.5%;
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+footer {
+    width: 100%;
+    height: 5em;
+}

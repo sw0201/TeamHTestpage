@@ -1,0 +1,258 @@
+/**로고글씨체**/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+/*전체 설정**/
+
+html {
+    font-size: calc(1vmax);
+}
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+/**header부분**/
+
+header { background-color: hsla(44, 59%, 66%, 0.74);
+    padding: 0%;
+    text-align : right;
+    height: 9%;
+    width : 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#logot {
+font-family: 'Black Han Sans', sans-serif;
+color : white;
+font-size: 2.4rem;
+font-weight: 10;
+text-align: left;
+position: absolute;
+left : 8.8%;
+top : 19%
+}
+
+#logoi {
+    width: 2.8%;
+    height: 2.8%;
+    position: relative;
+    left : -92%;
+    margin-top: 0.79%;
+}    
+
+
+nav { 
+display: inline-block; 
+position: absolute;
+top : 38%;
+right : 3%
+} 
+
+.Menu {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size:  1.7rem;
+    border : 0.0625em;
+    list-style: none;
+    display: inline-block;
+}
+
+
+ .list {
+    display: inline-block;
+    padding-left: 0.3em;
+}
+
+.list:hover {
+        text-decoration: underline;
+}
+
+
+
+.link {
+    color : white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(113, 70, 0);
+}
+
+.gohome {
+    text-decoration : none;
+}
+
+
+/**여기서 부터 본문**/
+
+.all {
+    padding-left: 18%;
+    padding-top: 7%;
+}
+
+h1 {
+    font-size: 3.13rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.new_color {
+    color : rgb(113, 70, 0);
+}
+
+#int {
+    font-size: 1.3rem;
+    color: rgb(107, 107, 107);
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: left;
+}
+
+.sel {
+width : 16%;
+padding: 0.5%;
+display: inline-block;
+position: relative;
+top : 18%;
+left : 50%;
+}
+
+hr {
+    width : 70%;
+    margin-bottom: 2.5em;
+}
+
+#reviewbookimg {
+    width: 12em;
+    height: 15.5em;
+    position: absolute;
+    left : 24%;
+    bottom : 26%;
+}
+
+.int {
+    position: absolute;
+    bottom : 10%;
+    left : 24%;
+
+    font-size: 1.2rem;
+}
+
+.buy a {
+    text-decoration: underline;
+    color :hsla(0, 72%, 44%, 0.74);
+}
+
+/**평점 및 후기**/
+
+
+#reviewtitle {
+    font-size : 2.4rem;
+    font-family: 'Black Han Sans', sans-serif;
+    border-radius: 35%;
+
+    display: inline-block;
+    position: absolute;
+    left: 19%;
+    top: 31%;
+    z-index: 4;
+    background-color: hsla(44, 59%, 66%, 0.74);
+}
+
+h2[class ^= "int"] {
+    font-size : 1rem;
+    font-family: 'Black Han Sans', sans-serif;
+    z-index: 10;
+}
+
+
+.field1 {
+    width : 30%;
+    height : 3%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    font-size : 1.3rem;
+    font-family: 'Black Han Sans', sans-serif;
+    border-radius: 10%;
+
+    position: relative;
+    left : 35%;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+input[type="radio"] {
+    width :2em;
+    height: 2em;
+    accent-color: hsla(0, 72%, 44%, 0.74);
+} 
+
+#reviewtext {
+    display: inline-block;
+    width : 85%;
+    height : 5%;
+    font-size: 1.4rem;
+    resize: none;
+}
+
+#reviewtext::placeholder {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.4rem;
+}
+
+input[type="button"] {
+    position: relative;
+    left : 87%;
+    font-size: 1.2rem;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+
+/**반짝이판**/
+
+
+#write {
+    margin-top: 4%;
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size : 3em;
+    z-index: 3;
+    color : rgb(62, 46, 6);
+}
+
+#write > span {
+    color: rgb(67, 67, 67);
+    font-size: 1.50rem;
+}
+
+
+/**footer부분**/
+
+#lastline {
+    border: 1px bold #c8c4c4;
+    width: 95%;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+
+.footertext {
+    color : gray; 
+    padding-top: 1.5%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height : 20px;
+}

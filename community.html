@@ -1,0 +1,79 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+ 	<title>서적 평론 싸이트</title>
+	<link href="style_community.css" type="text/css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+	<script>
+		function test() {$(function(){
+				var isRight = true;
+				$("table").find("input").each(function(index, item){
+					if ($(this).val().trim() == '') {
+						alert("모든 항목을 입력하세요.");
+						isRight = false;
+						return false;
+					}
+				});
+	
+				if (!isRight) {
+					return;
+				}
+			});
+		}
+	</script>
+</head>
+
+
+<body>
+	<!--로고와 이동하는 네이게이터-->
+	<header>
+    	<div class = "logo">
+			<a href="homepage.html" class = "gohome">
+				<h3 id = "logot">이야기 세상</h3>
+				<img src="mainimg/logo.png" id = "logoi">
+			</a>
+		</div>
+			<nav>
+				<ul class="Menu">
+				<a href="author.html" class = "link"><li class="list">작가</li></a>
+				<a href="ratings_month.html" class = "link"><li class = "list">랭킹</li></a>
+				<a href="reviewbook/review1.html" class = "link"><li class = "list">평점</li></a>
+				<a href="community.html" class = "link"><li class = "list">커뮤니티</li></a>
+				</ul>
+			</nav>
+	</header>
+	<div class="all">
+	<section>
+        <h1 class = "topic">자유 커뮤니티</h1>
+        <hr id = "line">
+        <form>
+            <table class="table">
+                <tr class="first">
+                    <td>제목 </td>
+                    <td colspan="5"><input type="text" name="subject" id = "title"></td>
+				</tr>
+				<tr class = "password">
+                    <td>아이디</td>
+                    <td><input type="text" name="writer" id="id"></td>
+                    <td>비밀번호</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr class="text">
+                    <td>내용</td>
+                    <td colspan="3">
+                        <textarea name="content" placeholder="모든 내용은 익명으로 소설관련 이야기를 지향합니다."></textarea> 
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="글쓰기" onclick="test()">
+            </form>
+
+	</section>
+
+</div>
+	<footer>
+		<hr id = "lastline">
+		<p class = "footertext">© TEAM H<br> made 2022.06</p>
+	</footer>
+
+</body>
